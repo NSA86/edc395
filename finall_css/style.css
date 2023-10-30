@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Alata', sans-serif;
+    color: #E8E8E8;
+    font-size: 62.5%;
+    /* 100%  = 16px */
+    /* 62.5% = 10px */
+    /* 10px = 1rem */
+}
+
+body {
+    background-color: #221A37;
+    background-image: url('images/Background\ Image.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    height: 100vh;
+
+    border-radius: 10rem;
+    box-shadow: 0px 0px 75px 35px rgba(0, 0, 0, 0.26);
+}
+img{
+    border-radius: 8px;
+}
+
+/********************************************************** HEADER */
+header {
+    max-width: 144rem;
+    padding: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 2.7rem;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header nav {
+    padding: 1rem 3.6rem;
+    display: flex;
+    gap: 3.2rem;
+    font-size: 1.4rem;
+}
+
+header nav a {
+    padding: 1.2rem 2rem;
+    color: #E8E8E8;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+}
+
+header nav a:hover {
+    border-radius: 1rem;
+    border: 1px solid #5D3974;
+}
+
+header nav .contact-btn {
+    color: #ffffff;
+    padding: 0.8rem 3.2rem;
+    border-radius: 2.6rem;
+    background: #402166;
+
+    /* Button Drop Shadow */
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    align-self: center;
+}
+
+header nav .contact-btn:hover {
+    box-shadow: 0px 4px 10px 0px #A60AC7;
+    border-radius: 2.6rem;
+}
+
+/********************************************************** MAIN */
+main {
+    max-width: 144rem;
+    padding: 2rem 13.5rem;
+    display: grid;
+    grid-template-columns: 48.2rem;
+    justify-content: end;
+    gap: 3rem;
+    font-size: 1.4rem;
+}
+
+main .title .top {
+    color: #5D3974;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+main .title h1 {
+    font-size: 5.2rem;
+    line-height: 93%;
+}
+
+main .title .bottom {
+    color: #575757;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main .title p {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 158.5%;
+    /* 22.19px */
+}
+
+@media(max-width: 1000px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width: 850px) {
+    html {
+        font-size: 50%;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    main {
+        background-color: rgba(153, 152, 152, 0.5);
+    }
+}
+
+/**********************************************resume************************/
+.resume{
+    display: grid;
+    max-width: 144rem;
+    grid-template-columns: 114px 500px;
+    justify-content: end;
+    gap: 3rem;
+    grid-auto-columns: minmax(100px, auto);
+    padding-right: 4rem;
+      
+}
+.resume_1,.resume_3,.resume_5{
+    border-right: #A60AC7 solid 2px;
+    justify-self: left;
+    padding-right: 1.5rem;
+   
+    
+}
+.ul_main,.ul_child{
+    padding-left: 2rem;
+    list-style-type:disc;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Aharoni;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 158.5%; /* 15.85px */
+}
+.resume_title{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Aharoni;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 158.5%; /* 22.19px */
+}
+
+/*********************************************************gallery*/
+.gallery{
+    display: grid;
+    max-width: 144rem;
+    grid-template-columns: 25rem 25rem;
+    justify-content: end;
+    gap: 3rem;
+    padding: 2rem 13.5rem;
+}
+/*************************************************************certificates***************/
+
+.certificates{
+    display: grid;
+    max-width: 144rem;
+    grid-template-columns: 25rem 25rem;
+    justify-content: end;
+    gap: 0.02rem;
+    padding: 2rem 13.5rem;
+}
